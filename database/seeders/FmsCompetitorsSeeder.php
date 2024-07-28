@@ -14,7 +14,6 @@ class FmsCompetitorsSeeder extends Seeder
      */
     public function run(): void
     {
-
         $competitors = [
             'Chuty', 'Skone', 'Gazir', 'Mounts', 'Less', 'Zasko Master', 'Mecha', 'Blon', 'Sweet Pain', 'Mnak', 'Jesus LC', 'Tirpa', // FMS España
             'Dominic','Lancer Lirical','Majestic','Ari Carrillo','Lobo Estepario','RC','Kaiser','Dante','Chang','Zticma', // FMS México
