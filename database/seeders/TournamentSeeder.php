@@ -25,8 +25,11 @@ class TournamentSeeder extends Seeder
         foreach ($tournaments as $tournament) {
             Tournament::create([
                 'user_id' => $admin->id,
-                'name' => $tournament,
-                'logo' => 'https://via.placeholder.com/150',
+                'title' => $tournament,
+                'description' => 'Descripción del torneo',
+                'location' => 'Ubicación del torneo',
+                'date' => now(),
+                'image' => 'https://via.placeholder.com/150',
             ]);
         }
     }

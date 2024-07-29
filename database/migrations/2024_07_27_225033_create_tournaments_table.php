@@ -13,8 +13,11 @@ return new class extends Migration {
         Schema::create('tournaments', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->constrained()->onDelete('cascade');
-            $table->string('name');
-            $table->string('logo')->nullable();
+            $table->string('title');
+            $table->text('description')->nullable();
+            $table->string('location')->nullable();
+            $table->dateTime('date')->nullable();
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }
